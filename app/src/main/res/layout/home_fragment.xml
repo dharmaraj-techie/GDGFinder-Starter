@@ -46,6 +46,9 @@
 
             <TextView
                 android:id="@+id/title"
+                android:textSize="24sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -67,6 +70,8 @@
             <TextView
                 android:id="@+id/subtitle"
                 android:layout_width="0dp"
+                android:textSize="18sp"
+                android:textColor="#555555"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:text="@string/gdgs_are"
