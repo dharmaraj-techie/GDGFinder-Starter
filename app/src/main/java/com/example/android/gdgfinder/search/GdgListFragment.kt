@@ -77,7 +77,6 @@ class GdgListFragment : Fragment() {
                 }
             }
         })
-
         setHasOptionsMenu(true)
         return binding.root
     }
@@ -106,9 +105,7 @@ class GdgListFragment : Fragment() {
             requestLocationPermission()
             return
         }
-
         val fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
-
         fusedLocationClient.lastLocation.addOnSuccessListener { location ->
             if (location == null) {
                 startLocationUpdates(fusedLocationClient)
